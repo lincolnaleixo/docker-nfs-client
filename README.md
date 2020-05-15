@@ -30,6 +30,9 @@ The entry script was adapted to be compatible with using this NFS client with da
 
 ## Usage
 
+
+docker run -itd --privileged=true --net=host -e FSTYPE=cifs -e MOUNT_OPTIONS=user=,pass= -e SERVER=//IP -e SHARE=sharefoldername nfsclient_lin
+
 Several possibilities:
 ### 1. Mount your NFS mount-point **manually** on your host
 
